@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Study Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>📚 AI Study Assistant</h1>
+
+    <textarea id="inputText" placeholder="Paste your notes or question here..."></textarea>
+
+    <div class="buttons">
+      <button onclick="summarizeText()">Summarize</button>
+      <button onclick="generateQuiz()">Generate Quiz</button>
+      <button onclick="saveData()">Save</button>
+    </div>
+
+    <div class="output">
+      <h2>Result:</h2>
+      <p id="outputBox"></p>
+    </div>
+
+    <div class="history">
+      <h2>Saved Notes</h2>
+      <ul id="historyList"></ul>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
